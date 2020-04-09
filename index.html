@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sign in form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<main>
+		<div class="ba-container">
+			<div class="ba-form">
+				<ul class="ba-form-header ba-row">
+					<li class="ba-col-4">
+						<input id="signin" checked type="radio" name="form-type">
+						<label class="ba-radio" for="signin">Sign in</label>
+					</li>
+					<li class="ba-col-4">
+						<input id="joinus" type="radio" name="form-type">
+						<label class="ba-radio ba-radio__active" for="joinus">Join us</label>
+					</li>
+				</ul>
+				<div class="ba-form-body">
+					<div class="ba-signin">
+						<form action="#" method="POST" class="ba-form-signin">
+							<label class="ba-form-data" for="username">Username</label>
+							<input class="ba-full-widht" required type="text" minlength="2" name="username" id="username">
+							<label class="ba-form-data" for="password">Password</label>
+							<input class="ba-full-widht" required type="password" minlength="5" name="password" id="password">
+							<div class="ba-checkbox">
+								<input type="checkbox" name="checkbox" checked value="yes" id="sign-check">
+								<label class="ba-checkbox__label" for="sign-check"> Keep me signed in</label>
+							</div>
+							<button class="ba-full-widht" type="submit">
+								Sign in
+							</button>
+							<div class="ba-signin__footer">
+								<a href="#">Forgot password</a>
+								<a href="#">Create an account</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+</body>
+
+</html>
